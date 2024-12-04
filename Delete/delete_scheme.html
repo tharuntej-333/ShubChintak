@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Scheme</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        outline: none;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        margin-bottom: 20px;
+      }
+
+      input[type="number"]:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+
+      button {
+        padding: 12px 20px;
+        background-color: #15803d;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+
+      button:hover {
+        background-color: #50a06e;
+      }
+
+      button:focus {
+        outline: none;
+        background-color: #0056b3;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+
+      .back-link {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Delete Scheme</h1>
+        <form method="POST" action="delete_scheme.php">
+            <label for="scheme_id">Enter Scheme ID:</label>
+            <input type="number" name="scheme_id" id="scheme_id" required>
+            <button type="submit">Delete Scheme</button>
+        </form>
+    </div>
+</body>
+</html>

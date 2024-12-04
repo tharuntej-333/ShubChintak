@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav{
+    max-width: 100vw;
+    margin: auto;
+    padding: 20px;  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(211, 248, 225);
+    box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.318);
+}
+
+#web-logo{
+    width: 20%;
+    margin-right: 3%;
+    mix-blend-mode: multiply;
+}  
+.nav-one{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+}
+.logout-btn { 
+    display: flex;
+    align-items:center;
+    justify-content:end;
+}
+.logout-btn a{
+    background-color:rgba(81, 178, 89, 0.799);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 20%;   
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.container {
+    max-width: 60vw;
+    height: 90vh;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 13px 0.2px rgb(71 69 69);
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.admin-section {
+    margin: 1em;
+    height: 7vw;
+}
+
+.admin-options {
+    margin: 0.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.admin-btn {
+    flex: 0 1 calc(40% - 10px);
+    /* Smaller width */
+    background: #333;
+    color: #fff;
+    padding: 3% 6%;
+    /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    /* Smaller font size */
+    text-align: center;
+    transition: background 0.3s;
+    color: white;
+    font-weight: bolder;
+}
+
+.admin-btn:hover {
+    background: #444;
+}
